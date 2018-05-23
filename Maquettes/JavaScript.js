@@ -54,6 +54,6 @@ var imageCount = 1;
 		varMapCompte.addEventListener("click", function(){
 			varImageZone.style="display: none";
 			varImagePhotos.style="display: none";
-			varImageCompte.style=""
+			varImageCompte.style="";
 			varImageBasique.style="display: none";
 			;});

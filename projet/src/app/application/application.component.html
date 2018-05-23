@@ -1,0 +1,13 @@
+
+
+  <div>NomPHoto</div>
+  <div>Classement</div>
+<ul *ngFor="let p of photos">
+  <li>{{p.id+' '+p.photoNom+' classée '+p.classement+' ème Photo la plus populaire'}}</li>
+  <button (click)="editPhoto(p.id)">Editer Etudiant</button> 
+</ul>
+<input [(ngModel)]="photo.photoNom"/>
+<input [(ngModel)]="photo.classement"/>
+<button (click)="addPhoto()" *ngIf="!edit">Add Photo</button>
+<button (click)="clearChamps()" *ngIf="edit">Soumettre Edition</button>
+

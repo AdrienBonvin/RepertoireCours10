@@ -1,0 +1,9 @@
+  hello {{etudiant.nom}} vous avez {{etudiant.age+etudiant.nom}}
+  <button (click)="getEtudiant()"> getEtudiant </button>
+  <br/>
+  <input [(ngModel)]="etudiant.nom"/>
+  <div *ngIf="etudiant.saved">Etudiant enregistré</div>
+  <button (click)="saveEtudiant()">Enregistrer Etudiant</button>
+  <ul *ngFor="let e of etudiants">
+    <li>{{e.nom}}</li>
+  </ul>
